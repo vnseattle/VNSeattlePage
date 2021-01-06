@@ -18300,3 +18300,40 @@ body .category-box-btn:hover {
 	@media only screen and (max-width: 1024px) {#style-switcher {display: none;}}
 
 	#style-switcher { display: none; }
+
+
+
+	
+	
+	.grid {
+	  background: #DDD;
+	}
+	
+	/* clear fix */
+	.grid:after {
+	  content: '';
+	  display: block;
+	  clear: both;
+	}
+	
+	/* ---- .grid-item ---- */
+	
+	.grid-sizer,
+	.grid-item {
+	  width: 33.333%;
+	}
+	
+	.grid-item {
+	  float: left;
+	}
+	
+	.grid-item img {
+	  display: block;
+	  max-width: 100%;
+	}
+
+	@media only screen and (max-width: 800px) {
+		.grid-item {
+			width: 100%;
+		  }
+	  }
